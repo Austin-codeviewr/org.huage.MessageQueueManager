@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "smwYe1wL5FzcMVyAKkafw+plNDzn7qpjKWFp1ahc8JcdadhQ8IYfFH0mwU4L1VUaVfGDf6erDj1sH7duVi60hw==",
+  "success": true,
+  "projectFilePath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\www90\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\www90\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\www90\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

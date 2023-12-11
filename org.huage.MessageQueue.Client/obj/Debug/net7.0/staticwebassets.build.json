@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NC+Vl+EPA8nLULy1HMYlbHQnTsJ5BTpZkTrDYQLRDKQ=",
+  "Source": "org.huage.MessageQueue.Client",
+  "BasePath": "_content/org.huage.MessageQueue.Client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

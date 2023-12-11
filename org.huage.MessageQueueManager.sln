@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "org.huage.MessageQueue.Client", "org.huage.MessageQueue.Client\org.huage.MessageQueue.Client.csproj", "{0E4C9553-B102-4E93-B904-A46C208542D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "org.huage.MessageQueue.Entity", "org.huage.MessageQueue.Entity\org.huage.MessageQueue.Entity.csproj", "{D7C910DF-CBAA-4057-8A76-5527F4FF15ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E4C9553-B102-4E93-B904-A46C208542D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4C9553-B102-4E93-B904-A46C208542D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4C9553-B102-4E93-B904-A46C208542D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4C9553-B102-4E93-B904-A46C208542D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C910DF-CBAA-4057-8A76-5527F4FF15ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C910DF-CBAA-4057-8A76-5527F4FF15ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C910DF-CBAA-4057-8A76-5527F4FF15ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C910DF-CBAA-4057-8A76-5527F4FF15ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,145 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Client\\org.huage.MessageQueue.Client.csproj": {}
+  },
+  "projects": {
+    "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Client\\org.huage.MessageQueue.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Client\\org.huage.MessageQueue.Client.csproj",
+        "projectName": "org.huage.MessageQueue.Client",
+        "projectPath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Client\\org.huage.MessageQueue.Client.csproj",
+        "packagesPath": "C:\\Users\\www90\\.nuget\\packages\\",
+        "outputPath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\www90\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj": {
+                "projectPath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj",
+        "projectName": "org.huage.MessageQueue.Entity",
+        "projectPath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj",
+        "packagesPath": "C:\\Users\\www90\\.nuget\\packages\\",
+        "outputPath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\www90\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

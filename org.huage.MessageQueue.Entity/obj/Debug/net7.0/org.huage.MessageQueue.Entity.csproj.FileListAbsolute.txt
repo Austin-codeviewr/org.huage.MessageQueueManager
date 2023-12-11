@@ -1,0 +1,12 @@
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\bin\Debug\net7.0\org.huage.MessageQueue.Entity.deps.json
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\bin\Debug\net7.0\org.huage.MessageQueue.Entity.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\bin\Debug\net7.0\org.huage.MessageQueue.Entity.pdb
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.csproj.AssemblyReference.cache
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.GeneratedMSBuildEditorConfig.editorconfig
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.AssemblyInfoInputs.cache
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.AssemblyInfo.cs
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.csproj.CoreCompileInputs.cache
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\refint\org.huage.MessageQueue.Entity.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.pdb
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\ref\org.huage.MessageQueue.Entity.dll
