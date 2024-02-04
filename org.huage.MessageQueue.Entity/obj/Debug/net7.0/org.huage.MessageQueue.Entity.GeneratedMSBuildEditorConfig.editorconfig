@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = org.huage.MessageQueue.Entity
 build_property.ProjectDir = F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

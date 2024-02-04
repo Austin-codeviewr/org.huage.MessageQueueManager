@@ -10,3 +10,4 @@ F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\o
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\refint\org.huage.MessageQueue.Entity.dll
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.pdb
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\ref\org.huage.MessageQueue.Entity.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Entity\obj\Debug\net7.0\org.huage.MessageQueue.Entity.sourcelink.json

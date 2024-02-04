@@ -1,12 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "smwYe1wL5FzcMVyAKkafw+plNDzn7qpjKWFp1ahc8JcdadhQ8IYfFH0mwU4L1VUaVfGDf6erDj1sH7duVi60hw==",
+  "dgSpecHash": "m0hE7WG15wWIVI7+Di8v3F0kQdCZPn939xKv0S5Zn0c4FO2Lk2fERAJYOTMoASV8wsyFFELeSSCysKbiGArXrg==",
   "success": true,
   "projectFilePath": "F:\\Admin\\org.huage.MessageQueue\\org.huage.MessageQueue.Entity\\org.huage.MessageQueue.Entity.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\www90\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\www90\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\www90\\.nuget\\packages\\sqlsugar\\5.1.4.129\\sqlsugar.5.1.4.129.nupkg.sha512",
+    "C:\\Users\\www90\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\www90\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\www90\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“SqlSugar 5.1.4.129”。此包可能与项目不完全兼容。",
+      "libraryId": "SqlSugar",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -1,11 +1,8 @@
 ﻿using System.Text;
-using System.Timers;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using org.huage.MessageQueue.Entity.Config;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Timer = System.Timers.Timer;
 
 namespace org.huage.MessageQueue.Client.service;
 
@@ -38,8 +35,7 @@ public class MessageQueueManager : IMessageQueueManager
         _logger = logger;
         //拿到配置文件
         _queueBaseOption = messageQueueOption.Value.QueueBase;
-        _rabbitConnectOptions = messageQueueOption.Value?.RabbitConnect ??
-                                throw new ArgumentNullException(nameof(messageQueueOption));
+        _rabbitConnectOptions = messageQueueOption.Value?.RabbitConnect ?? throw new ArgumentNullException(nameof(messageQueueOption));
         ConnectToMq();
     }
 
@@ -58,17 +54,34 @@ public class MessageQueueManager : IMessageQueueManager
     public Task SendMessageAsync(string msg, string exchange, string queue, string routeKey,
         string exchangeType = "topic",IDictionary<string, object>? arguments = null)
     {
-        _channel.ExchangeDeclare(exchange, exchangeType, true);
-        _channel.QueueDeclare(queue, true, false, false, arguments);
-        _channel.QueueBind(queue, exchange, routeKey, arguments);
-        var basicProperties = _channel.CreateBasicProperties();
-        //1：非持久化 2：可持久化
-        basicProperties.DeliveryMode = 2;
-        //var json = JsonConvert.SerializeObject(msg);
-        var payload = Encoding.UTF8.GetBytes(msg);
-        var address = new PublicationAddress(ExchangeType.Direct, exchange, routeKey);
-        _channel.BasicPublish(address, basicProperties, payload);
-        return Task.CompletedTask;
+        
+        try
+        {
+            _channel.ConfirmSelect();
+            
+            _channel.ExchangeDeclare(exchange, exchangeType, true);
+            _channel.QueueDeclare(queue, true, false, false, arguments);
+            _channel.QueueBind(queue, exchange, routeKey, arguments);
+            var basicProperties = _channel.CreateBasicProperties();
+            //1：非持久化 2：可持久化
+            basicProperties.DeliveryMode = 2;
+            //var json = JsonConvert.SerializeObject(msg);
+            var payload = Encoding.UTF8.GetBytes(msg);
+            var address = new PublicationAddress(ExchangeType.Direct, exchange, routeKey);
+            _channel.BasicPublish(address, basicProperties, payload);
+
+            if (!_channel.WaitForConfirms())
+            {
+                _logger.LogError("消息发送失败");
+            }
+            
+            return Task.CompletedTask;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
 
 
@@ -82,11 +95,11 @@ public class MessageQueueManager : IMessageQueueManager
         if (_channel is not null)
         {
             _channel.QueueDelete(queue, false, false);
+            _channel.ConfirmSelect();
         }
 
         return Task.CompletedTask;
     }
-
 
     /// <summary>
     /// 消费消息
@@ -131,7 +144,7 @@ public class MessageQueueManager : IMessageQueueManager
                     _channel.BasicAck(ea.DeliveryTag, false);
                 }
             };
-
+            
             _channel.BasicConsume(clientQueue, isAutoAck, consumer: consumer);
             return result;
         }

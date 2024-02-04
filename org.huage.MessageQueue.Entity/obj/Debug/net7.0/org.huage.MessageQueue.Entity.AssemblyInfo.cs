@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("org.huage.MessageQueue.Entity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e97799b5d2785da1687f958417874f41eef4e3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("org.huage.MessageQueue.Entity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("org.huage.MessageQueue.Entity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

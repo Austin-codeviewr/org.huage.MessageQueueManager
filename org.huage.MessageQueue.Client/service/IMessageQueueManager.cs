@@ -1,6 +1,8 @@
-﻿namespace org.huage.MessageQueue.Client.service;
+﻿using org.huage.MessageQueue.Client.IOC;
 
-public interface IMessageQueueManager
+namespace org.huage.MessageQueue.Client.service;
+
+public interface IMessageQueueManager : ITransitDenpendency
 {
     Task SendMessageAsync(string msg, string exchange, string queue, string routeKey,
         string exchangeType = "topic", IDictionary<string, object>? arguments = null);

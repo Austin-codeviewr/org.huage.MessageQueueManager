@@ -35,3 +35,10 @@ F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\obj\Debug\net7.0\r
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\obj\Debug\net7.0\org.huage.MessageQueue.Client.pdb
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\obj\Debug\net7.0\org.huage.MessageQueue.Client.genruntimeconfig.cache
 F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\obj\Debug\net7.0\ref\org.huage.MessageQueue.Client.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Autofac.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Castle.Core.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Castle.Core.AsyncInterceptor.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Castle.Windsor.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\Admin\org.huage.MessageQueue\org.huage.MessageQueue.Client\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll

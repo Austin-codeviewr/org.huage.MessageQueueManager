@@ -1,21 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using org.huage.MessageQueue.Client.Aop;
 using org.huage.MessageQueue.Client.service;
-using RabbitMQ.Client;
 
 namespace org.huage.MessageQueue.Client.Controllers;
 
 [ApiController]
 [Route("/[controller]/[action]")]
-public class MessageQueueController
+public class MessageQueueController : Controller
 {
     private readonly ILogger<MessageQueueController> _logger;
 
-    private readonly IMessageQueueManager _messageQueueManager;
+    private readonly IServiceScopeFactory _factory;
+    [AutowiredProperty] public IMessageQueueManager MessageQueueManager { get; set; }
 
-    public MessageQueueController(ILogger<MessageQueueController> logger, IMessageQueueManager messageQueueManager)
+    public MessageQueueController(ILogger<MessageQueueController> logger, IServiceScopeFactory factory)
     {
         _logger = logger;
-        _messageQueueManager = messageQueueManager;
+        _factory = factory;
     }
 
     [HttpPost]
@@ -25,9 +26,9 @@ public class MessageQueueController
         try
         {
             //转成执行的值
-            await _messageQueueManager.SendMessageAsync(msg, exchange, queue, routeKey);
+            await MessageQueueManager.SendMessageAsync(msg, exchange, queue, routeKey);
         }
-        catch (Exception e)
+        catch (Exception _)
         {
             _logger.LogError($"Error in org.huage.Service.MessageQueueManager.MessageQueueController.SendMessage.");
             throw;
@@ -39,9 +40,9 @@ public class MessageQueueController
     {
         try
         {
-            await _messageQueueManager.ConsumerMessageAsync(exchange, queue, routeKey);
+            await MessageQueueManager.ConsumerMessageAsync(exchange, queue, routeKey);
         }
-        catch (Exception e)
+        catch (Exception _)
         {
             _logger.LogError($"Error in org.huage.Service.MessageQueueManager.MessageQueueController.ConsumerMessage.");
             throw;
@@ -53,7 +54,7 @@ public class MessageQueueController
     {
         try
         {
-            await _messageQueueManager.CreateQueue(queue, exchange, exchangeType, routingKey);
+            await MessageQueueManager.CreateQueue(queue, exchange, exchangeType, routingKey);
         }
         catch (Exception e)
         {
